@@ -1,12 +1,9 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Code, Sparkles, Palette } from "lucide-react";
 import { AnimatedText } from "./ui/animated-text";
 import Navbar from "./navbar";
-import Image from "next/image";
 import AnimatedProjects from "./ui/animated-projects";
-import Link from "next/link";
 import SkillsAndContact from "./ui/skillandcontact";
 
 export const Hero = () => {
@@ -34,38 +31,11 @@ export const Hero = () => {
                 <motion.p>
                     <p className="text-lg text-gray-400 max-w-2xl mx-auto p-2"><span className="bg-gray-800 bg-opacity-75 p-1 
                     rounded-md text-white">I bring designs to life </span>—starting in Figma, finishing with code. From pixel-perfect layouts to scalable
-                        solutions, I'm the bridge between looks great and works great.
+                        solutions, I&apos;m the bridge between looks great and works great.
                     </p>
                 </motion.p>
 
                 <div>
-
-                    {/* <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-16">
-          {[
-            { icon: Palette, text: "UI/UX Design", color: "from-purple-500 to-pink-500" },
-            { icon: Code, text: "Development", color: "from-blue-500 to-cyan-500" },
-            { icon: Sparkles, text: "Animation", color: "from-amber-500 to-orange-500" }
-            ].map((item, index) => (
-                <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.2 * (index + 1) }}
-                className="relative group"
-                >
-                <div className="absolute inset-0 bg-gradient-to-r opacity-0 group-hover:opacity-100 blur-xl transition-opacity duration-500" />
-                <div className="relative bg-white/5 backdrop-blur-sm rounded-xl p-6 border border-white/10 hover:border-white/20 transition-colors">
-                <div className={`w-12 h-12 rounded-lg bg-gradient-to-r ${item.color} p-2 mb-4 mx-auto`}>
-                <item.icon className="w-8 h-8 text-white" />
-                </div>
-                <h3 className="text-xl font-semibold text-white mb-2">{item.text}</h3>
-                <p className="text-gray-400">
-                Creating exceptional digital experiences through innovative solutions
-                </p>
-                </div>
-                </motion.div>
-                ))}
-                </div> */}
                 </div>
             </div>
 
