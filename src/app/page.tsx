@@ -15,7 +15,7 @@ export default function Home() {
         const response = await axios.get(url);
         console.log('Keep-alive ping sent, status:', response.status);
       } catch (error) {
-        console.error('Keep-alive ping failed:');
+        console.error('Keep-alive ping failed:', error);
       }
     }, 720000 ); // 12 minutes
   };
