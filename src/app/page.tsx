@@ -2,6 +2,7 @@
 
 import { AnimatedBackground } from "./components/ui/animated-background";
 import { Hero } from "./components/hero";
+import axios from "axios";
 
 export default function Home() {
 
@@ -11,12 +12,12 @@ export default function Home() {
     const url = 'https://vid-craftersa.onrender.com/';
     setInterval(async () => {
       try {
-        const response = await fetch(url);
-        console.log('Keep-alive ping sent, status:', response.status);
+        const response = await axios.get(url);
+        console.log('Keep-alive ping sent, status:');
       } catch (error) {
-        console.error('Keep-alive ping failed:', error);
+        console.error('Keep-alive ping failed:');
       }
-    }, 840000); // 14 minutes
+    }, 8400); // 14 minutes
   };
   
   keepAlive();
