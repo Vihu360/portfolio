@@ -13,11 +13,11 @@ export default function Home() {
     setInterval(async () => {
       try {
         const response = await axios.get(url);
-        console.log('Keep-alive ping sent, status:');
+        console.log('Keep-alive ping sent, status:', response.status);
       } catch (error) {
         console.error('Keep-alive ping failed:');
       }
-    }, 8400); // 14 minutes
+    }, 720000 ); // 12 minutes
   };
   
   keepAlive();
